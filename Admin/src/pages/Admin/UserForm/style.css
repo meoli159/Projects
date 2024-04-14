@@ -1,0 +1,28 @@
+.user-form__page {
+  width: 500px;
+  padding: 20px;
+}
+.user-form__page form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-user__page input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.create-user__page input[type='number']::-webkit-inner-spin-button,
+.create-user__page input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.user-form__wrapper > div {
+  margin-top: 10px;
+}
+.user-form__btn-action {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}

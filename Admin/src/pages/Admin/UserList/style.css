@@ -1,0 +1,38 @@
+.admin-page {
+  min-height: 95dvh;
+}
+.users-page__action-btn {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+.create-btn {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#users {
+  text-align: center;
+  width: 100%;
+}
+#users thead {
+  font-weight: bolder;
+  font-size: large;
+}
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04aa6d;
+  color: white;
+}
+#users tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#users tr:hover {
+  background-color: #ddd;
+}
+#users td,
+#users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}

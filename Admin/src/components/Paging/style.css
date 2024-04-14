@@ -1,0 +1,28 @@
+.paging-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paging-button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: large;
+}
+
+.paging-button:hover {
+  background-color: #e9e9e9;
+}
+
+.paging-button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.paging-button.active {
+  background-color: #59aaf6;
+  color: #fff;
+}
