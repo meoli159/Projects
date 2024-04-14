@@ -28,18 +28,18 @@
   cursor: pointer;
 }
 
-.form__input {
+.login__form--input {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.form__input input {
+.login__form--input input {
   width: 300px;
   height: 30px;
   font-size: larger;
-  padding: 1rem;
+  padding: 20px;
   border-radius: 5px;
   border: 1px solid black;
   margin-bottom: 10px;
@@ -53,10 +53,10 @@
   padding: 20px;
   border-radius: 5px;
 } */
-/* .login-bg h1 {
+.login__form h1 {
   text-align: center;
   font-size: 5em;
   font-weight: bold;
   margin: 20px;
-  font-family: 'Pacifico', cursive;
-} */
+  /* font-family: 'Pacifico', cursive; */
+}

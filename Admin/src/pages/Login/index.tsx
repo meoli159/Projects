@@ -26,7 +26,7 @@ export const Login = () => {
       <ToastContainer />
       <form className="login__form" onSubmit={onSubmitHandler}>
         <h1>Login</h1>
-        <p className="form__input">
+        <p className="login__form--input">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -35,16 +35,19 @@ export const Login = () => {
             onChange={(e) => setUserName(e.target.value)}
           />
         </p>
-        <p className="form__input">
+        <p className="login__form--input">
           <label htmlFor="password">Password</label>
           <input
-            type="text"
+            type="password"
             placeholder="Password"
             id="password"
             onChange={(e) => setPassword(e.target.value)}
           />
         </p>
         <button type="submit">Login</button>
+        <p>
+          No Account? <a href="/auth/register">Register here</a>
+        </p>
       </form>
     </div>
   );

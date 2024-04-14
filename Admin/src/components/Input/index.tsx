@@ -23,12 +23,12 @@ export const Input = ({
   onKeyDown,
 }: TProps) => {
   return (
-    <div className="input-wrapper">
+    <div className={`input-wrapper ${className}`}>
       <label className="input-label" htmlFor={name}>
         {label}
       </label>
       <input
-        className={`input-original ${className}`}
+        className={`input-original `}
         type={type}
         id={id}
         name={name}

@@ -6,8 +6,8 @@ type LoginDTO = {
 };
 
 type RegisterDTO = LoginDTO & {
-  userName: string;
-  roles: string[];
+  username: string;
+  roles?: string[];
   address?: string;
   phone?: number;
 };

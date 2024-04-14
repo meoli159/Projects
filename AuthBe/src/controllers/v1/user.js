@@ -40,12 +40,12 @@ export const register = async (req, res) => {
     const reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     const checkMail = reg.test(email);
 
-    if (!username || !password) {
+    if (!email || !password) {
       return res.status(401).json({ message: 'Please fill all required fields' });
     }
-    const existUser = await User.findOne({ username: username });
+    const existUser = await User.findOne({ email: email });
     if (existUser) {
-      return res.status(400).json({ message: 'Username already existed' });
+      return res.status(400).json({ message: 'Email already existed' });
     }
     if (!checkMail) {
       return res.json({
@@ -86,10 +86,9 @@ export const updateUser = async (req, res) => {
   try {
     const { id } = req.params;
     const { username, password, address, phone } = req.body;
-    console.log(id);
     const updatedUser = {
       username: username,
-      password: password,
+      password: await hashPassword(password),
       address: address,
       phone: phone,
     };
